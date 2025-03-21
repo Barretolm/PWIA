@@ -63,5 +63,11 @@ html, body{
     background-color: #743939;
 }
 .link-menu{
+    text-decoration: none;
+    color: #743939;
+    font-weight: bold;
+}
+.link-menu:hover{
+    color: #faebd7;
     
 }
