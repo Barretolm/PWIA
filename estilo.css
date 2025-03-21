@@ -49,3 +49,19 @@ html, body{
     text-align: center;
     font-family: Arial;
 }
+.menu{
+    background-color: #faebd7;
+    color:#743939;
+    border: 1px solid;
+    display: flex;
+}
+.item-menu{
+    list-style: none;
+    padding: 10px 20px;
+}
+.item-menu:hover{
+    background-color: #743939;
+}
+.link-menu{
+    
+}
