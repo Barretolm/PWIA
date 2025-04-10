@@ -7,12 +7,14 @@ html, body{
     padding:0;
     height: 100%;
     background-color: #ffffff;
+    
 }
 .card{
     width: 268px;
     height: 500px;
-    
+    margin: 25px;
     background-color: #743939;
+    border-radius: 10px;
 }
 .img-card{
     width: 268px;
@@ -69,5 +71,10 @@ html, body{
 }
 .link-menu:hover{
     color: #faebd7;
+    
+}
+
+main{
+    display: flex;
     
 }
