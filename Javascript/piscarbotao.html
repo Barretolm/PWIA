@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" value="Barreto" name="nome" id="entrada">
+    <br>
+
+    <button id="but">trocar input</button>
+
+    <script>
+
+        var entrada = document.getElementById("entrada");
+        var but = document.getElementById("but");
+
+        console.log(entrada);
+        console.log(but);
+
+        function trocartexto(){
+            console.log("Deu certo");
+
+            if(but.style.backgroundColor="red"){
+                but.style.backgroundColor ="green";
+                entrada.style.backgoundColor ="green";
+                entrada.value="Palmeiras";
+
+            }else{
+
+                but.style.backgroundColor = "red";
+                entrada.style.backgroundColor= "red";
+                entrada.value = "CR7";
+            }
+        }
+
+        but.addEventListenner("click", trocartexto)
+    </script>
+</body>
+</html>
