@@ -18,23 +18,7 @@
 
     <script>
 
-        function adicionarImagem(){
-            var texto = document.getElementById('texto')
-            var lista = document.getElementById ("listaImagens")
-            var item = document.createElement("li")
-            var img = document.createElement('img')
-
-            img.src = texto.value
-            img.width = 150
-            img.heigh = 70
-            item.append(img)
-            lista.append(item)
-            
-
-
-            console.log(item)
-            console.log(texto)
-        }
+        
 
 
         var nomes = ["João", "Gabriel", "Abel Ferreira", "Anilton", "Gabryel", "Guilherme", "Heitor", "Davi", "Fernando", "Nalu"]
@@ -69,7 +53,7 @@
                 lista.forEach(
             (valor, indice) => {
                 document.write("<br>indice:"+indice+ " Valor é :"+valor+"<br>")
-            }
+          }
         );
                 document.write("<hr>")
             }

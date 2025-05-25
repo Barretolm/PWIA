@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de lista</title>
+</head>
+<body>
+    <h1>Listas com javascript</h1>
+
+
+    <script>
+
+        
+
+        var cores=["Verde", "Vermelho", "Azul"]
+
+
+        function exibirLista(lista){
+            document.write("<hr>")
+            lista.forEach(
+                (valor, indice) => {
+                    document.write("<br>indice:"+indice+ " Cor: "+valor+"<br>")
+                }
+            );
+            document.write("<hr>")
+        }
+
+        
+        exibirLista(cores)
+        cores.push('Amarelo')
+        exibirLista(cores)
+        cores.shift()
+        exibirLista(cores)
+        cores.unshift("Preto")
+        exibirLista(cores)
+        cores.pop()
+        exibirLista(cores)
+        cores.reverse()
+        exibirLista(cores)
+        
+    </script>
+</body>
+</html>
