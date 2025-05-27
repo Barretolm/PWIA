@@ -1,41 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarefas</title>
-        <style>
+    <title>Nomes</title>
+    <style>
         body{
             text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>Tarefas</h1>
-
+    <h1>Lista de Nomes</h1>
 
     <script>
 
-        
-
-        var t=[]
-
+        var nomes=["Barreto", "Fernando"]
 
         function exibirLista(lista){
             document.write("<hr>")
             lista.forEach(
                 (valor, indice) => {
-                    document.write("<br>Tarefas: " +valor+ "<br>")
+                    document.write("<br>"+valor+"<br>")
                 }
-            );
+            )
             document.write("<hr>")
         }
 
-        
-        exibirLista(t)
-        t.push("Estudar", "Ler", "Lavar a louça")
-        exibirLista(t)
-        
+        exibirLista(nomes)
+        nomes.unshift("Tochetto", "João Victor")
+        exibirLista(nomes)
     </script>
+
+    
 </body>
 </html>
