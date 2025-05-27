@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista numerica 2</title>
+        <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lista numerica 2</h1>
+
+    <script>
+        var numeros=[]
+
+        function exibirLista(lista){
+            document.write("<hr>")
+            lista.forEach(
+                (valor, indice) => {
+                    document.write("<br>"+valor+"<br>")
+                }
+            )
+            document.write("<hr>")
+        }
+
+        exibirLista(numeros)//Não vai aparecer nada no site pq n tem nada na lista
+        numeros.unshift("1", "2", "3", "4", "5")
+        exibirLista(numeros)
+        numeros.reverse()
+        exibirLista(numeros)
+    </script>
+</body>
+</html>
